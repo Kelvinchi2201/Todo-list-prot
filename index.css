@@ -1,0 +1,267 @@
+body{
+    background-color: var(--LT-bg-color);
+  margin: 0;
+
+}
+#task-title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0 1rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    width: 80%;
+    color:var(--primary-color-Lt);
+    
+    
+    
+}
+
+#main{
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    background-color:var(--primary-color-Lt);
+    width: 35%;
+    
+  border-radius: 0.5rem;
+    border: 2px solid goldenrod;
+    gap: 1rem;
+   
+}
+
+
+
+
+
+#form{
+  max-width: var(--content-width);
+ 
+  margin: auto;
+  display: flex;
+  padding: 0.5rem;
+  justify-content:space-around;
+  align-items: center;
+  border: 2px solid goldenrod;
+  background-color: var(--primary-color-LT-darker);
+  border-radius: 0.5rem;
+  height: 4rem;
+ 
+}
+#form-input-task{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-right: 0.5rem; 
+  border-color: goldenrod;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  
+
+}
+
+
+
+#form-btn{
+  border: none;
+  background-color: var(--primary-color-LT-darker);
+  width: 2rem;
+  color: var(--LT-btn-check);
+  transition: all 0.2s ease-in-out;
+}
+#form-btn:active{
+  color: var(--LT-btn-check-darker);
+
+
+}
+#form-btn:hover{
+  color:  var(--LT-btn-check-darker);
+
+}
+
+
+
+#form-error-text{
+    
+    color: red;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+#task-list {
+    padding-left: 1rem;
+    padding-right: 1rem;
+   display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: auto;
+    max-height: 15rem;
+    width: 100%;
+    gap: 0.5rem;
+    max-width: var(--content-width);
+    border-radius: 0.5rem;
+    
+}
+
+#form-input-task{
+  
+  
+  background-color: white;
+  border: 2px solid goldenrod;
+
+
+
+
+}
+.task-item{
+  display: flex;
+  color: white;
+    justify-content: space-between; 
+    align-items: center;
+    border: 2px solid goldenrod;
+    background-color: var(--primary-color-LT-darker);
+    padding: 0.5rem; 
+    border-radius: 0.5rem;
+}
+
+.task-delete-btn {
+  justify-content: center;
+  align-items: center;
+  width: 10%; 
+  color: var(--LT-btn-delete-darker); 
+  background-color:var(--primary-color-LT-darker);
+  transition: all 0.2s ease-in-out;
+  
+}
+.task-delete-btn:active{
+  color:var(--LT-btn-delete);
+
+
+}
+.task-delete-btn:hover{
+  color:   var(--LT-btn-delete);
+
+}
+
+
+
+
+
+
+.task-check-btn {
+    justify-content: center;
+    align-items: center;
+    width: 10%; 
+    color: var(--LT-btn-check); 
+    transition: all 0.2s ease-in-out;
+    background-color:var(--primary-color-LT-darker);
+}
+
+.task-check-btn:active{
+  color: var(--LT-btn-check-darker);
+
+
+}
+.task-check-btn:hover{
+  color: var(--LT-btn-check-darker);
+
+}
+
+
+.task-text {
+  border: 2px solid goldenrod;
+  background-color: rgb(253, 253, 139);
+  width: 70%; 
+  border-radius: 2rem;
+  padding: 0.5rem; 
+  color: black;
+}
+
+.task-check-btn1{ justify-content: center;
+  align-items: center;
+  width: 10%; 
+  color: var(--LT-btn-check-darker); 
+  transition: all 0.2s ease-in-out;
+  background-color:var(--primary-color-LT-darker);
+
+}
+.task-check-btn2{ justify-content: center;
+  align-items: center;
+  width: 10%; 
+  color: var(--LT-btn-check-darker); 
+  transition: all 0.2s ease-in-out;
+  background-color:var(--primary-color-LT-darker);
+
+}
+.task-check-btn3{ justify-content: center;
+  align-items: center;
+  width: 10%; 
+  color: var(--LT-btn-check-darker); 
+  transition: all 0.2s ease-in-out;
+  background-color:var(--primary-color-LT-darker);
+
+}
+
+
+#task-counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid goldenrod;
+  background-color:var(--primary-color-LT-darker);
+  padding: 0.5rem; 
+  border-radius: 0.5rem;
+ 
+}
+.task-all{
+  color: goldenrod;
+  font-weight: 700;
+   font-size: 0.75rem;
+}
+.task-delete{
+  color: goldenrod;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.task-complete{
+  color: goldenrod;
+  font-weight: 700;
+  font-size: 0.75rem
+}
+
+@media (max-width: 768px) {
+  #task-title {
+      font-size: 2rem; /
+  }
+
+  #main {
+      width: 95%; }
+
+
+
+  .task-item {
+      flex-direction: row; 
+      align-items: center;
+      justify-content: center;
+      
+  }
+
+  .task-text {
+      width: 100%; 
+  }
+
+  #task-counter {
+      flex-direction: row; 
+      align-items: flex-start;
+  }
+}
+
+
